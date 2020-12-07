@@ -1,13 +1,22 @@
+@function colors ($color-name, $color-variant) {
+    @return map-get(map-get($color, $color-name), $color-variant);
+}
+
 $color: (
-    background: (
+    primary: (
         base:#191A1C,
         light:#404040,
         text:#AFAFAF
 
     ),
-    red: #9B1B31,
-    pink:#CC3366,
-    teal:#7BC4C4,
-    blue:#5A5CA0,
-    yellow:#F0BF59
+    secondary: (
+    redd: #9B1B31,
+    pinkk:#CC3366,
+    teall:#7BC4C4,
+    bluee:#5A5CA0,
+    yelloww:#F0BF59
+    )
 );
+*{
+    background-color: colors(primary, base);
+}
