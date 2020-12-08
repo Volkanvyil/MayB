@@ -38,9 +38,40 @@ $color: (
     font: size 0,7vh;
     
     }
+
+
+.dive_deeper {
+    text-align: center;
+    color: colors(primary, light);
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: 500;
+   // couldnt figure out how to make this one responsive > font: size 0,5vh;
+
+}    
+
+.triangle_container {
+    display: flex;
+    justify-content: center;
+    .triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 2vw solid transparent;
+    border-right: 2vw solid transparent;
+  
+    border-top: 2vw solid colors(secondary, redd);
+    border-radius: 3px 3px 3px;
+    cursor: pointer;
+}
+}  
+
+
+
 @media screen and (max-width: 1100px) {
     h2 {
       font-size: 2vh;
       letter-spacing: 15px;
-    }}
+      }}
 }
