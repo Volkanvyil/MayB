@@ -39,6 +39,8 @@ body{
     font: size 0,7vh;
     }
 
+
+// triangle scroll
 .dive_deeper {
     text-align: center;
     color: colors(primary, light);
@@ -60,8 +62,8 @@ section {
 }
 
 .btn_down {
-  margin-top: -20px;
-  font-size: 50px;
+  margin-top: -25px;
+  font-size: 8vh;
   text-align: center;
   color: rgba($color: #9B1B31, $alpha: 0.6);
   :hover {
@@ -72,6 +74,26 @@ section {
 html {
   scroll-behavior: smooth;
 }
+//
+
+
+//scroll bar
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: colors(primary, light); 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: colors(secondary, redd); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: colors(primary, textt); 
+}
+//
 
 
 @media screen and (max-width: 1100px) {
