@@ -77,10 +77,10 @@ html {
 }
 
 .sidenav {
-  height: 1000px;
+  height: 100%;
   width: 0;
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   top: 0;
   left: 0;
   background-color: #404040;
@@ -120,8 +120,10 @@ html {
   width: 53px;
   height: 39px;
   margin: 30px 0 0 30px;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   cursor: pointer;
+  top: 30px;
 }
 
 #menu-toggle * {
@@ -134,17 +136,13 @@ html {
 #wave {
   width: 54px;
   height: 40px;
-  color: #9B1B31;
 }
 
 @media screen and (max-width: 700px) {
-  #wave {
-    visibility: hidden;
-  }
   .sidenav {
-    height: 200px;
-    width: 100%;
-    position: relative;
+    width: 250px;
+    height: 100%;
+    position: fixed;
     background-color: #404040;
     -webkit-transition: 0.3s;
     transition: 0.3s;
