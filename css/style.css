@@ -22,7 +22,7 @@ body {
   font: size 0,7vh;
 }
 
-* .dive_deeper {
+.dive_deeper {
   text-align: center;
   color: #404040;
   font-family: 'Oswald';
@@ -34,7 +34,7 @@ body {
   padding-top: 92px;
 }
 
-* section {
+section {
   width: 100%;
   height: 45vh;
   display: -webkit-box;
@@ -45,42 +45,35 @@ body {
           justify-content: center;
 }
 
-* .btn_down {
+.btn_down {
   margin-top: -25px;
   font-size: 8vh;
   text-align: center;
   color: rgba(155, 27, 49, 0.6);
 }
 
-* .btn_down :hover {
+.btn_down :hover {
   color: #404040;
 }
 
-* html {
+html {
   scroll-behavior: smooth;
 }
 
-* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
 }
 
-* ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: #404040;
 }
 
-* ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: rgba(155, 27, 49, 0.6);
 }
 
-* ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background: #9B1B31;
-}
-
-@media screen and (max-width: 1100px) {
-  * h2 {
-    font-size: 2vh;
-    letter-spacing: 15px;
-  }
 }
 
 .sidenav {
@@ -123,15 +116,6 @@ body {
   transition: margin-left .2s;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-
 #menu-toggle {
   width: 53px;
   height: 39px;
@@ -151,5 +135,32 @@ body {
   width: 54px;
   height: 40px;
   color: #9B1B31;
+}
+
+@media screen and (max-width: 700px) {
+  #wave {
+    visibility: hidden;
+  }
+  .sidenav {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    background-color: #404040;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    padding-top: 5px;
+  }
+  .sidenav a {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Amatic SC';
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: #AFAFAF;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
 }
 /*# sourceMappingURL=style.css.map */
