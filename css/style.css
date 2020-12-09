@@ -52,6 +52,10 @@ body {
   color: rgba(155, 27, 49, 0.6);
 }
 
+* .btn_down :hover {
+  color: #404040;
+}
+
 * html {
   scroll-behavior: smooth;
 }
