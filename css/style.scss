@@ -150,21 +150,14 @@ html {
         height: 40px;
     }
 
-    //sea animals
-    .sea_animals {
-      position: relative;
-      width: 400px;
-      height: 200px;  
-      
-      &.japanese_crab{
-        position: absolute;
-        top: -250px;
-        right: 100px;
-        width: 906.3px;
-        height: 574.84px;
-      }
-    }
-
+// crab positioning
+#japanese_crab {
+  position: absolute;
+  z-index: 1;
+  top: 80vh;
+  left: 10vw;
+  width: 40vw;
+}
 
 
     @media screen and (max-width: 700px){
