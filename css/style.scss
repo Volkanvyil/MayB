@@ -87,11 +87,11 @@ html {
 }
  
 ::-webkit-scrollbar-thumb {
-  background: colors(secondary, redd); 
+  background: rgba($color: #9B1B31, $alpha: 0.6); 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: colors(primary, textt); 
+  background: colors(secondary, redd); 
 }
 //
 

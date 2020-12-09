@@ -69,11 +69,11 @@ body {
 }
 
 * ::-webkit-scrollbar-thumb {
-  background: #9B1B31;
+  background: rgba(155, 27, 49, 0.6);
 }
 
 * ::-webkit-scrollbar-thumb:hover {
-  background: #AFAFAF;
+  background: #9B1B31;
 }
 
 @media screen and (max-width: 1100px) {
