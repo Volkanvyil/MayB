@@ -8,7 +8,7 @@ $color: (
     primary: (
         base:#191A1C,
         light:#404040,
-        text:#AFAFAF
+        textt:#AFAFAF
 
     ),
     secondary: (
@@ -19,12 +19,13 @@ $color: (
     yelloww:#F0BF59
     )
 );
-*{
+body{
     background-color: colors(primary, base);
+}
+*{
+    z-index: 1;
     font-family: 'Roboto';
     font-weight: 200;
-    //display: flex;
-   // flex-wrap: wrap;
     h1{
         font-family: 'Amatic SC';
     }
@@ -36,42 +37,95 @@ $color: (
     letter-spacing: 30px;
     text-align: center;
     font: size 0,7vh;
-    
     }
-
-
 .dive_deeper {
     text-align: center;
     color: colors(primary, light);
     font-family: 'Oswald';
     text-transform: uppercase;
-    font-style: italic;
+    font-style: normal;
     letter-spacing: 2px;
     font-weight: 500;
-   // couldnt figure out how to make this one responsive > font: size 0,5vh;
+    font: size 20px;
+    padding-top: 92px;
 
 }    
 
 .triangle_container {
     display: flex;
     justify-content: center;
+    padding-top: 5px;
     .triangle {
     width: 0; 
     height: 0; 
     border-left: 2vw solid transparent;
     border-right: 2vw solid transparent;
-  
-    border-top: 2vw solid colors(secondary, redd);
-    border-radius: 3px 3px 3px;
+    border-top: 3vw solid colors(secondary, redd);
+    border-radius: 2px 2px 2px;
     cursor: pointer;
-}
+    }
 }  
-
-
 
 @media screen and (max-width: 1100px) {
     h2 {
       font-size: 2vh;
       letter-spacing: 15px;
-      }}
+      }
+    }
 }
+
+//navigation
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: colors(primary,light);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+  }
+  .sidenav a {
+    text-align: center;
+    padding: 80px 0 80px 0;
+    font-family: 'Amatic SC';
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 10px;
+    color: colors(primary, textt);
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: -58px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #main {
+    transition: margin-left .2s;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  #menu-toggle{
+      *{
+          transition: .25 ease-in-out;
+          box-sizing: border-box;
+      }
+      width: 53px;
+      height:39px ;
+      margin: 30px 0 0 30px;
+      position:fixed;
+      cursor: pointer;
+    }
+    #wave{
+        width: 54px;
+        height: 40px;
+        color: colors(secondary, redd);
+    }
+//
