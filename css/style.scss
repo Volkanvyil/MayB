@@ -149,6 +149,24 @@ html {
         width: 54px;
         height: 40px;
     }
+
+    //sea animals
+    .sea_animals {
+      position: relative;
+      width: 400px;
+      height: 200px;  
+      
+      &.japanese_crab{
+        position: absolute;
+        top: -250px;
+        right: 100px;
+        width: 906.3px;
+        height: 574.84px;
+      }
+    }
+
+
+
     @media screen and (max-width: 700px){
       
       .sidenav {
