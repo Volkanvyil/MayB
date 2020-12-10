@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MainPage</title>
     <link rel="stylesheet" href="css/style.css">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+<!--button-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-
+<!--side navigation and closing button-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -42,18 +39,17 @@
 </div>
 
 <div class="sea_animals">
-    <img src="img/japanesecrab.png" alt="japanese crab" id="japanese_crab">
+    <a href="crab.html"><img src="img/japanesecrab.png" alt="japanese crab" id="japanese_crab"></a>
 </div>
 
 
-
+<!--for opening and closing side nav-->
     <script>
         AOS.init();
        var navDrawer = false;
      function openNav() {
          if (navDrawer == false) {
        document.getElementById("mySidenav").style.width = "100%";
-//   document.getElementById("main").style.marginLeft = "100%";
        navDrawer = true;  }
          
        else  {
