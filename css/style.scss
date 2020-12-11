@@ -23,6 +23,11 @@ body{
     background-color: colors(primary, base);
     margin: 0;
 }
+
+// controls the triangle button, but if it were to be more down, it wasnt in effect?
+html {
+  scroll-behavior: smooth;
+}
 *{
     
     font-family: 'Roboto';
@@ -147,13 +152,8 @@ section {
     color: colors(primary, light)
   }
 
-
-html {
-  scroll-behavior: smooth;
-}
 }
 //
-
 
 // positioning of species
 #japanese_crab {
@@ -194,6 +194,7 @@ html {
   top: 290vh;
   left: 10vw;
   transform: rotate(350deg);
+  z-index: 1;
 }
 }
 
@@ -312,7 +313,7 @@ footer {
 
 
 canvas {
-  display: block;
+//  display: block;
   vertical-align: bottom;
 }
 
@@ -321,7 +322,10 @@ canvas {
 /* ---- particles.js container ---- */
 
 #particles-js {
-  position: absolute;
+  position: fixed;
   width: 100%;
+  height: 100%;
   margin: 0;
+  z-index: -10;
+  top:0;
 }
