@@ -21,6 +21,7 @@ $color: (
 );
 body{
     background-color: colors(primary, base);
+    margin: 0;
 }
 *{
     
@@ -306,4 +307,21 @@ footer {
   padding-top:5%;
   left:25%;
   width: 40vw;
+}
+
+
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  margin: 0;
 }
