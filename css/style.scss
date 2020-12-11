@@ -45,44 +45,6 @@ body{
     }
   }
 
-// triangle scroll
-.dive_deeper {
-    text-align: center;
-    color: colors(primary, light);
-    font-family: 'Oswald';
-    text-transform: uppercase;
-    font-style: normal;
-    letter-spacing: 2px;
-    font-weight: 500;
-    font: size 20px;
-    padding-top: 92px;
-
-}    
-
-section {
-  width: 100%;
-  height: 15vh;
-  display: flex;
-  justify-content: center;
-}
-
-.btn_down {
-  margin-top: -25px;
-  font-size: 8vh;
-  text-align: center;
-  color: rgba($color: #9B1B31, $alpha: 0.6);
-  :hover {
-    color: colors(primary, light)
-  }
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-//
-
-
 //scroll bar
 ::-webkit-scrollbar {
   width: 10px;
@@ -96,10 +58,10 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: colors(secondary, redd); 
 }
-//
 
 
 //navigation
+.navigation{
   .sidenav {
     height: 100%;
     width: 0;
@@ -151,6 +113,47 @@ html {
         width: 54px;
         height: 40px;
     }
+  }
+
+.main{
+// triangle scroll
+.dive_deeper {
+    text-align: center;
+    color: colors(primary, light);
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font: size 20px;
+    padding-top: 92px;
+
+}    
+
+section {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+}
+
+.btn_down {
+  margin-top: -25px;
+  font-size: 8vh;
+  text-align: center;
+  color: rgba($color: #9B1B31, $alpha: 0.6);
+  :hover {
+    color: colors(primary, light)
+  }
+
+
+html {
+  scroll-behavior: smooth;
+}
+}
+//
+
+
 // positioning of species
 #japanese_crab {
   position: absolute;
@@ -188,8 +191,9 @@ html {
   position: absolute;
   width: 18vw;
   top: 290vh;
-  left: 20vw;
+  left: 10vw;
   transform: rotate(350deg);
+}
 }
 
 footer {
@@ -198,44 +202,60 @@ footer {
   background-color: colors(primary, light);
   position: absolute;
   left: 0;
+  height: 250px;
   width: 100%;
   justify-content: space-around;
   color: colors(primary, base);
   .logo_footer {
     width: 20vw;
     margin-top: 3vh;
-    font-family: 'Roboto';
+    font-family: 'Oswald';
     font-size: 1.7vh;
     letter-spacing: 0.1vw;
-    img {
-      width: 13vw;
+    #blacklogo {
+      width: 150px;
     }
     .address {
-      font-size: 1.3vh;
+      font-size: 12px;
       font-weight: 400;
     }
   }
   .creators {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 20vw;
-    margin-top: 0.35vh;
+    margin-top: 3vh;
     .creator_names {
       font-family: 'Oswald';
       letter-spacing: 0.3vw;
       font-weight: 400;
+      
     }
     .creator_accounts {
-      font-family: 'Roboto';
+      font-family: 'Oswald';
       margin-top: -2vh;
-      font-size: 1.6vh;
+      font-size: 1.2vh;
       letter-spacing: 0.1vw;
+      font-weight: 400;
+      padding-right: 5px;
     }
   }
 }
 
+
    /* @media screen and (max-width: 700px){
 */
+
+
+
+
+//subpages
+.animal_name{
+  text-align: center;
+  position: relative;
+  
+
+}
 #logo1{
   display: flex;
   flex-wrap: wrap;
@@ -247,6 +267,7 @@ footer {
   left: 45%;
   margin-bottom: 2vh;
 }
+//japanese crab page
 #japanese_crab_page {
   position: relative;
   z-index:1;
@@ -254,9 +275,35 @@ footer {
   left:25%;
   width: 50vw;
 }
-.animal_name{
-  text-align: center;
+//blobfish page
+#blob_fish_page{
   position: relative;
-  
-
+  z-index:1;
+  padding-top:5%;
+  left:25%;
+  width: 50vw;
+}
+//cosmicjelly page
+#cosmicjelly_page{
+  position: relative;
+  z-index:1;
+  padding-top:5%;
+  left:25%;
+  width: 50vw;
+}
+//goblinshark page
+#goblinskark_page{
+  position: relative;
+  z-index:1;
+  padding-top:5%;
+  left:25%;
+  width: 50vw;
+}
+//dumbo page
+#dumbo_octapus_page{
+  position: relative;
+  z-index:1;
+  padding-top:5%;
+  left:25%;
+  width: 50vw;
 }
