@@ -141,6 +141,18 @@ html {
   height: 40px;
 }
 
+@media screen and (max-width: 1650px) {
+  .main .title {
+    padding-top: 15vh;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .main .title {
+    padding-top: 25vh;
+  }
+}
+
 .main .dive_deeper {
   text-align: center;
   color: #404040;

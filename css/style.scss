@@ -157,6 +157,14 @@ html {
   }
 
 .main{
+  .title{
+    @media screen and (max-width: 1650px){
+      padding-top: 15vh;
+    }
+    @media screen and (max-width: 1300px){
+      padding-top: 25vh;
+    }
+  }
 // triangle scroll
 .dive_deeper {
     text-align: center;
