@@ -61,9 +61,40 @@ html {
   padding-top: 60px;
 }
 
+.navigation .contents {
+  padding: 20px 40% 0 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .contents #about_hover:hover {
+  color: #191A1C;
+}
+
+.navigation .contents #crab_hover:hover {
+  color: #9B1B31;
+}
+
+.navigation .contents #blob_hover:hover {
+  color: #7BC4C4;
+}
+
+.navigation .contents #jelly_hover:hover {
+  color: #F0BF59;
+}
+
+.navigation .contents #shark_hover:hover {
+  color: #5A5CA0;
+}
+
+.navigation .contents #dumbo_hover:hover {
+  color: #CC3366;
+}
+
 .navigation .sidenav a {
-  text-align: center;
-  padding: 80px 0 80px 0;
+  padding: 40px 0 40px 0;
+  text-align: left;
   font-family: 'Amatic SC';
   text-decoration: none;
   font-size: 25px;
@@ -76,9 +107,9 @@ html {
 
 .navigation .sidenav .closebtn {
   position: absolute;
-  top: -58px;
+  top: -35px;
   right: 25px;
-  font-size: 36px;
+  font-size: 40px;
   margin-left: 50px;
 }
 
@@ -143,7 +174,7 @@ html {
   color: #404040;
 }
 
-.main #japanese_crab {
+.main .sea_animals #japanese_crab {
   position: absolute;
   z-index: 1;
   top: 80vh;
@@ -151,15 +182,15 @@ html {
   width: 40vw;
 }
 
-.main #blub_fish {
+.main .sea_animals #blub_fish {
   position: absolute;
-  width: 8vw;
+  width: 10vw;
   z-index: 1;
   right: 0;
   top: 125vh;
 }
 
-.main #cosmic_jelly {
+.main .sea_animals #cosmic_jelly {
   position: absolute;
   width: 40vw;
   z-index: 1;
@@ -167,7 +198,7 @@ html {
   top: 180vh;
 }
 
-.main #goblin_shark {
+.main .sea_animals #goblin_shark {
   position: absolute;
   width: 50vw;
   z-index: 1;
@@ -175,7 +206,7 @@ html {
   top: 240vh;
 }
 
-.main #dumbo {
+.main .sea_animals #dumbo {
   position: absolute;
   width: 18vw;
   top: 290vh;
@@ -264,6 +295,30 @@ footer .creators .creator_accounts {
   margin-bottom: 2vh;
 }
 
+.info {
+  position: absolute;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.info p {
+  color: #AFAFAF;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10vh 50% 0 5vw;
+}
+
+@media screen and (max-width: 800px) {
+  .info p {
+    padding-right: 5vw;
+  }
+}
+
 #japanese_crab_page {
   position: relative;
   z-index: 1;
@@ -304,11 +359,28 @@ footer .creators .creator_accounts {
   width: 40vw;
 }
 
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 15%;
+}
+
+.team #memb {
+  height: 200px;
+  padding: 0 20px 0 20px;
+}
+
+/* ---- particles.js container ---- */
 canvas {
   vertical-align: bottom;
 }
 
-/* ---- particles.js container ---- */
 #particles-js {
   position: fixed;
   width: 100%;

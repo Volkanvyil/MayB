@@ -80,9 +80,43 @@ html {
     transition: 0.3s;
     padding-top: 60px;
   }
+  .contents{
+    padding: 20px 40% 0 40% ;
+    align-items: center;
+    #about_hover{
+      &:hover{
+      color: colors(primary, base);
+    }
+  }
+  #crab_hover{
+    &:hover{
+      color: colors(secondary, redd);
+    }
+  }
+  #blob_hover{
+    &:hover{
+      color: colors(secondary, teall);
+    }
+  }
+  #jelly_hover{
+    &:hover{
+      color: colors(secondary, yelloww);
+    }
+  }
+  #shark_hover{
+    &:hover{
+      color: colors(secondary, bluee);
+    }
+  }
+  #dumbo_hover{
+    &:hover{
+      color: colors(secondary, pinkk);
+    }
+  }
+}
   .sidenav a {
-    text-align: center;
-    padding: 80px 0 80px 0;
+    padding: 40px 0 40px 0;
+    text-align: left;
     font-family: 'Amatic SC';
     text-decoration: none;
     font-size: 25px;
@@ -93,9 +127,9 @@ html {
   }
   .sidenav .closebtn {
     position: absolute;
-    top: -58px;
+    top: -35px;
     right: 25px;
-    font-size: 36px;
+    font-size: 40px;
     margin-left: 50px;
   }
   #main {
@@ -156,6 +190,7 @@ section {
 //
 
 // positioning of species
+.sea_animals{
 #japanese_crab {
   position: absolute;
   z-index:1;
@@ -166,7 +201,7 @@ section {
 
 #blub_fish {
   position: absolute;
-  width: 8vw;
+  width: 10vw;
   z-index: 1;
   right: 0;
   top: 125vh;
@@ -188,6 +223,7 @@ section {
   top: 240vh;
 }
 
+
 #dumbo {
   position: absolute;
   width: 18vw;
@@ -197,7 +233,7 @@ section {
   z-index: 1;
 }
 }
-
+}
 footer {
   margin-top: 240vh;
   display: flex;
@@ -255,8 +291,6 @@ footer {
 .animal_name{
   text-align: center;
   position: relative;
-  
-
 }
 #logo1{
   display: flex;
@@ -269,6 +303,26 @@ footer {
   left: 45%;
   margin-bottom: 2vh;
 }
+
+.info{
+  position: absolute;
+  height: 500px ;
+  display: flex;
+  flex-wrap: wrap;
+  p{
+  color:colors(primary, textt);
+  display:block;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10vh 50% 0 5vw;
+}
+@media screen and (max-width: 800px){
+  p{
+    padding-right:5vw;
+  }
+}
+}
+
 //japanese crab page
 #japanese_crab_page {
   position: relative;
@@ -310,16 +364,29 @@ footer {
   width: 40vw;
 }
 
-
-
-canvas {
-//  display: block;
-  vertical-align: bottom;
+.team{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 15%;
+  #memb{
+    height: 200px;
+    padding:0 20px 0 20px
+  }
 }
 
 
 
+
+
+
+
+
 /* ---- particles.js container ---- */
+canvas {
+//  display: block;
+  vertical-align: bottom;
+}
 
 #particles-js {
   position: fixed;
@@ -329,3 +396,5 @@ canvas {
   z-index: -10;
   top:0;
 }
+
+

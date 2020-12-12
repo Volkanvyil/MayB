@@ -6,12 +6,64 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
     
+    
 </head>
 <body>
+    <div class="navigation">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="contents">
+            <a href="about.html" id="about_hover">About us</a>
+            <a href="crab.html" id="crab_hover">Japanese spider crab</a>
+            <a href="blobfish.html" id="blob_hover">Blobfish</a>
+            <a href="cosmicjelly.html"id="jelly_hover">Cosmic jellyfish</a>
+            <a href="goblinshark.html"id="shark_hover">Goblin shark</a>
+            <a href="dumbo.html"id="dumbo_hover">Dumbo octapus</a>
+          </div>
+          </div>
+
+
+          <div id="main">
+            <div id="menu-toggle"  onclick="openNav()">
+               <img id="wave" src="img/wave.png">
+            </div></div>
+            <!--logo on top-->
+    <div class='logo1'>
+      <a href="Index.html"><img src="img/logo.png" alt="logo" id="logo1"></a>
+    </div>
+<div class="team">
+    <img src="img/hanna3.png" alt="Hanna" id="memb">
+    <img src="img/evina.png" alt="Evina" id="memb">
+    <img src="img/mads.png" alt="Mads" id="memb">
+    <img src="img/hanna4.png" alt="Hanna" id="memb">
+</div>
     <!-- particles.js container --> 
 <div id="particles-js"></div>
 <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="js/back.js"></script>
+
+<!--for opening and closing side nav-->
+<script>
+    AOS.init();
+   var navDrawer = false;
+ function openNav() {
+     if (navDrawer == false) {
+   document.getElementById("mySidenav").style.width = "100%";
+   navDrawer = true;  }
+     
+   else  {
+       closeNav()
+     }
+ }
+  function closeNav() {
+   document.getElementById("mySidenav").style.width = "0";
+   document.getElementById("main").style.marginLeft= "0";
+   navDrawer = false;
+ }
+ 
+</script>
+
+
 </body>
 </html>
