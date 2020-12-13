@@ -24,6 +24,10 @@ body{
     margin: 0;
     height: 100%;
 }
+::selection{
+  color: colors(primary, textt);
+  background:colors(primary, light)
+}
 
 // controls the triangle button, but if it were to be more down, it wasnt in effect?
 html {

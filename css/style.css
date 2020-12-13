@@ -5,6 +5,16 @@ body {
   height: 100%;
 }
 
+::-moz-selection {
+  color: #AFAFAF;
+  background: #404040;
+}
+
+::selection {
+  color: #AFAFAF;
+  background: #404040;
+}
+
 html {
   scroll-behavior: smooth;
 }
