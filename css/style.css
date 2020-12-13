@@ -126,7 +126,6 @@ html {
   position: -webkit-sticky;
   position: fixed;
   cursor: pointer;
-  top: 30px;
 }
 
 .navigation #menu-toggle * {
@@ -190,7 +189,7 @@ html {
 .main .sea_animals #japanese_crab {
   position: absolute;
   z-index: 1;
-  top: 80vh;
+  top: 100vh;
   left: 10vw;
   width: 40vw;
 }
@@ -200,7 +199,7 @@ html {
   width: 10vw;
   z-index: 1;
   right: 0;
-  top: 125vh;
+  top: 130vh;
 }
 
 .main .sea_animals #cosmic_jelly {
@@ -208,7 +207,7 @@ html {
   width: 40vw;
   z-index: 1;
   left: 18vw;
-  top: 180vh;
+  top: 185vh;
 }
 
 .main .sea_animals #goblin_shark {
@@ -216,13 +215,13 @@ html {
   width: 50vw;
   z-index: 1;
   right: 0;
-  top: 240vh;
+  top: 245vh;
 }
 
 .main .sea_animals #dumbo {
   position: absolute;
   width: 18vw;
-  top: 290vh;
+  top: 280vh;
   left: 10vw;
   -webkit-transform: rotate(350deg);
           transform: rotate(350deg);
@@ -387,6 +386,24 @@ footer .creators .creator_accounts {
 .team #memb {
   height: 200px;
   padding: 20px 20px;
+}
+
+.team .person {
+  position: relative;
+}
+
+.team .person .name {
+  font-family: "Oswald";
+  font-size: 20px;
+  color: #AFAFAF;
+  margin-left: 100px;
+}
+
+.text_about {
+  font-family: "Roboto";
+  color: #AFAFAF;
+  margin: 100px 100px;
+  font-weight: 400;
 }
 
 /* ---- particles.js container ---- */
