@@ -170,6 +170,11 @@ html {
     width: 54px;
     
   }
+  @media screen and (max-width: 600px){
+    #home{
+      visibility: hidden;
+    }
+  }
 }
 .main{
   .title{
@@ -221,15 +226,15 @@ section {
   top: 100vh;
   left: 10vw;
   width: 40vw;
-  //
-  -webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  &:hover{
-    -webkit-filter: grayscale(0);
-	filter: grayscale(0);
-  }
+ //
+ -webkit-filter: grayscale(0);
+ filter: grayscale(0);
+ -webkit-transition: .3s ease-in-out;
+ transition: .3s ease-in-out;
+ &:hover{
+   -webkit-filter: grayscale(100%);
+ filter: grayscale(100%);
+ }
 }
 
 #blub_fish {
@@ -247,7 +252,6 @@ section {
     -webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
   }
-  
 }
 
 #cosmic_jelly {
@@ -256,6 +260,15 @@ section {
   z-index: 1;
   left: 18vw;
   top: 185vh;
+  //
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  &:hover{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+  }
 }
 
 #goblin_shark {
@@ -264,6 +277,15 @@ section {
   z-index: 1;
   right:0;
   top: 245vh;
+  //
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  &:hover{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+  }
 }
 
 
@@ -274,6 +296,15 @@ section {
   left: 10vw;
   transform: rotate(350deg);
   z-index: 1;
+  //
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  &:hover{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+  }
 }
 }
 }
@@ -346,36 +377,48 @@ footer {
   margin-bottom: 2vh;
 }
 
+
+
+
 .info{
-  position: absolute;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  .p1{
-  color:colors(primary, textt);
-  font-size: 15px;
-  font-weight: 400;
-  padding: 10vh 50% 0 5vw;}
-  .p2{
-  color:colors(primary, textt);
-  font-size: 15px;
-  font-weight: 400;
-  margin-left: 50%;
-  margin-top:300px;
+  .bio{
+    display: flex;
+  flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-top: 200px;
+    margin-left: 23.7vw;
+    width: 300px;
+    height: 400px;
+    border: 3px colors(secondary, redd) solid;
+    border-radius: 20px 20px;
   }
-  .p3{
-    color:colors(primary, textt);
-  font-size: 15px;
-  font-weight: 400;
-  padding: 10vh 50% 0 5vw;
-  margin-bottom: 400px;
+  @media screen and (max-width: 500px){
+    .bio{
+      margin:10vw;
+    }
+  }
+  .appearance_biology{
+    display: flex;
+  flex-wrap: wrap;
+  
+    box-sizing: border-box;
+    margin-top: 200px;
+    justify-content: right;
+    margin-left:60vw;
+    margin-right: 23.7vw;
+    width: 400px;
+    height: 200px;
+    border: 3px colors(secondary, redd) solid;
+    border-radius: 20px 20px;
   }
 }
-@media screen and (max-width: 800px){
-  p{
-    padding-right:5vw;
-  }
-}
+
+
+
+
 
 //japanese crab page
 #japanese_crab_page {
