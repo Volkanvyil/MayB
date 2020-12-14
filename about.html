@@ -21,8 +21,6 @@
             <a href="dumbo.html"id="dumbo_hover">Dumbo octopus</a>
           </div>
           </div>
-
-
           <div id="main">
             <div id="menu-toggle"  onclick="openNav()">
                <img id="wave" src="img/wave.png">
@@ -32,11 +30,28 @@
       <a href="Index.html"><img src="img/logo.png" alt="logo" id="logo1"></a>
     </div>
 <div class="team">
-    <img src="img/hanna3.png" alt="Hanna" id="memb">
-    <img src="img/evina.png" alt="Evina" id="memb">
-    <img src="img/mads.png" alt="Mads" id="memb">
-    <img src="img/hanna4.png" alt="Hanna" id="memb">
+   <div class="person">
+     <img src="img/hanna3.png" alt="Hanna" id="memb">
+     <div class="name">Hanna</div>
+    </div>
+   <div class="person">
+     <img src="img/evina.png" alt="Evina" id="memb">
+     <div class="name">Evina</div>
+     </div>
+   <div class="person">
+     <img src="img/mads.png" alt="Mads" id="memb">
+     <div class="name">Mads</div>
+   </div>
+   <div class="person">
+     <img src="img/volkan.png" alt="Volkan" id="memb">
+     <div class="name">Volkan</div>
+   </div>
 </div>
+<div class="text_about">
+  Darkmare is an online interactive experience showcasing a collection of various deep sea animals.
+It was created as a first semestral project by four students of EASV with the intention to raise awareness to exploration and find a way to capture people’s attention, when it comes to education.
+</div>
+
     <!-- particles.js container --> 
 <div id="particles-js"></div>
 <!-- particles.js lib --> 
@@ -50,8 +65,7 @@
  function openNav() {
      if (navDrawer == false) {
    document.getElementById("mySidenav").style.width = "100%";
-   navDrawer = true;  }
-     
+   navDrawer = true;  } 
    else  {
        closeNav()
      }
@@ -61,7 +75,6 @@
    document.getElementById("main").style.marginLeft= "0";
    navDrawer = false;
  }
- 
 </script>
 
 
