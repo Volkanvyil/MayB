@@ -150,6 +150,23 @@ html {
   height: 40px;
 }
 
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: fixed;
+  top: 30;
+  right: 0;
+}
+
+.home #home {
+  margin: 30px 30px 0 0;
+  width: 54px;
+}
+
 @media screen and (max-width: 1650px) {
   .main .title {
     padding-top: 15vh;
@@ -202,6 +219,15 @@ html {
   top: 100vh;
   left: 10vw;
   width: 40vw;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.main .sea_animals #japanese_crab:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 .main .sea_animals #blub_fish {
@@ -210,6 +236,15 @@ html {
   z-index: 1;
   right: 0;
   top: 130vh;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.main .sea_animals #blub_fish:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .main .sea_animals #cosmic_jelly {
