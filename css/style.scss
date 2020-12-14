@@ -319,21 +319,33 @@ footer {
 
 .info{
   position: absolute;
-  height: 500px ;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
-  p{
+  .p1{
   color:colors(primary, textt);
-  display:block;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10vh 50% 0 5vw;}
+  .p2{
+  color:colors(primary, textt);
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 50%;
+  margin-top:300px;
+  }
+  .p3{
+    color:colors(primary, textt);
   font-size: 15px;
   font-weight: 400;
   padding: 10vh 50% 0 5vw;
+  margin-bottom: 400px;
+  }
 }
 @media screen and (max-width: 800px){
   p{
     padding-right:5vw;
   }
-}
 }
 
 //japanese crab page
@@ -422,6 +434,35 @@ canvas {
   margin: 0;
   z-index: -10;
   top:0;
+}
+
+//slide in about us page
+ .slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          background-color: colors(primary, light);
+          color:colors(primary, textt);
+          margin: 200px 100px 0;
+}
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
 }
 
 
