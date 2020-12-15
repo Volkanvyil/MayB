@@ -387,90 +387,36 @@ footer .creators .creator_accounts {
   margin-bottom: 2vh;
 }
 
-.info {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  color: #AFAFAF;
-  font-family: 'Roboto';
-  font-weight: 300;
-  font-size: 18px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#scrollcrab {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  -webkit-animation: rotate 1s linear infinite;
+          animation: rotate 1s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+          animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
-.info ul {
-  list-style-type: none;
-}
-
-.info .bio {
-  background-color: #404040;
-  padding: 5px 10px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  margin-top: 300px;
-  width: 300px;
-  height: 350px;
-  border-radius: 20px 20px;
-}
-
-@media screen and (max-width: 500px) {
-  .info .bio {
-    margin: 10vw;
-  }
-  .info .map {
-    margin: 10vw;
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
-.info .map {
-  margin: 360px 5vw 5vh 5vw;
-}
-
-.info .map #map {
-  width: 300px;
-}
-
-.info .appearance_biology {
-  padding: 5px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  margin-top: 300px;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  margin-left: 40vw;
-  margin-right: 26vw;
-  width: 700px;
-  height: 200px;
-}
-
-.info .connection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  margin-top: 300px;
-  margin-bottom: 300px;
-  width: 700px;
-  height: 200px;
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .bio_container {
