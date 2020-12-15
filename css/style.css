@@ -473,6 +473,74 @@ footer .creators .creator_accounts {
   height: 200px;
 }
 
+.bio_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8vh;
+}
+
+.bio_content {
+  width: 20vw;
+  margin-left: 20vw;
+  padding: 15px;
+  text-align: justify;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #404040;
+  color: #AFAFAF;
+  font-family: 'Oswald';
+  font-weight: 200;
+  font-size: 2vh;
+}
+
+.jelly_appear {
+  width: 35vw;
+  margin-left: 3vw;
+  text-align: justify;
+  color: #AFAFAF;
+  font-family: 'Roboto';
+  font-size: 1.8vh;
+}
+
+.jelly_appear .title_jelly {
+  font-family: 'Amatic SC';
+  font-size: 3vh;
+  color: #F0BF59;
+  letter-spacing: 0.3vw;
+  margin-bottom: 10px;
+}
+
+.secondline_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 7vh;
+}
+
+.secondline_info .jelly_humanrelation {
+  width: 30vw;
+  margin-left: 20vw;
+  margin-top: 10vh;
+  text-align: justify;
+  color: #AFAFAF;
+  font-family: 'Roboto';
+  font-size: 1.8vh;
+}
+
+.secondline_info .jelly_humanrelation .humanjelly_title {
+  font-family: 'Amatic SC';
+  font-size: 3vh;
+  color: #F0BF59;
+  letter-spacing: 0.3vw;
+  margin-bottom: 10px;
+}
+
+.secondline_info .jelly_map img {
+  width: 25vw;
+  margin-top: 7vh;
+  margin-left: 5vw;
+}
+
 #japanese_crab_page {
   position: relative;
   z-index: 1;

@@ -398,7 +398,7 @@ footer {
     background-color: colors(primary, light);
     padding: 5px 10px 0 0;
     display: flex;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
     box-sizing: content-box;
     margin-top: 300px;
    // margin-left: 23.7vw;
@@ -449,8 +449,69 @@ width: 300px;
 }
 
 
+// cosmic jelly structuring
+.bio_container {
+  display: flex;
+  margin-top: 8vh;
+}
 
+.bio_content {
+  width: 20vw;
+  margin-left: 20vw;
+  padding: 15px;
+  text-align: justify;
+  border-radius: 5px 5px 5px 5px;
+ // border: 2px solid colors(secondary, yelloww);
+  background-color: colors(primary, light);
+  color: colors(primary, textt);
+  font-family: 'Oswald';
+  font-weight: 200;
+  font-size: 2vh;
+}
 
+.jelly_appear {
+  width: 35vw;
+  margin-left: 3vw;
+  text-align: justify;
+  color: colors(primary, textt);
+  font-family: 'Roboto';
+  font-size: 1.8vh;
+  .title_jelly {
+    font-family: 'Amatic SC';
+    font-size: 3vh;
+    color: colors(secondary, yelloww);
+    letter-spacing: 0.3vw;
+    margin-bottom: 10px;
+  }
+}
+
+.secondline_info {
+  display:flex;
+  margin-bottom: 7vh;
+  .jelly_humanrelation {
+    width: 30vw;
+    margin-left: 20vw;
+    margin-top: 10vh;
+    text-align: justify;
+    color: colors(primary, textt);
+    font-family: 'Roboto';
+    font-size: 1.8vh;
+    .humanjelly_title {
+      font-family: 'Amatic SC';
+      font-size: 3vh;
+      color: colors(secondary, yelloww);
+      letter-spacing: 0.3vw;
+      margin-bottom: 10px;
+    }
+  }
+  .jelly_map {
+    img {
+      width: 25vw;
+      margin-top: 7vh;
+      margin-left: 5vw;
+    }
+  }
+}
 
 //japanese crab page
 #japanese_crab_page {
