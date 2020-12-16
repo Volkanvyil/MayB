@@ -62,7 +62,7 @@ html {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 4;
+  z-index: 100;
   top: 0;
   left: 0;
   background-color: #404040;
@@ -136,6 +136,7 @@ html {
   position: -webkit-fixed;
   position: fixed;
   cursor: pointer;
+  z-index: 10;
 }
 
 .navigation #menu-toggle * {
@@ -393,6 +394,7 @@ footer .creators .creator_accounts {
 }
 
 .animal_name_dumbo {
+  z-index: 1;
   text-align: center;
   position: relative;
   text-shadow: 1px 1px 1px #CC3366;
@@ -471,6 +473,7 @@ footer .creators .creator_accounts {
 }
 
 .appear {
+  z-index: 4;
   width: 35vw;
   margin-left: 3vw;
   text-align: justify;
@@ -590,10 +593,10 @@ footer .creators .creator_accounts {
     display: -ms-flexbox;
     display: flex;
     margin-top: 8vh;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .bio_container .bio_content {
     width: 73%;
