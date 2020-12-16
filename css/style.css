@@ -185,6 +185,10 @@ html {
   }
 }
 
+.main .title .logo_main {
+  padding-top: 5%;
+}
+
 .main .dive_deeper {
   text-align: center;
   color: #404040;
