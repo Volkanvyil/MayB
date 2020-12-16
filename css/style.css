@@ -25,7 +25,6 @@ html {
   color: #AFAFAF;
   letter-spacing: 2vw;
   font-weight: 700;
-  text-shadow: 1px 1px 1px #9B1B31;
 }
 
 * h2 {
@@ -63,7 +62,7 @@ html {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   top: 0;
   left: 0;
   background-color: #404040;
@@ -134,7 +133,7 @@ html {
   width: 53px;
   height: 39px;
   margin: 30px 0 0 30px;
-  position: -webkit-sticky;
+  position: -webkit-fixed;
   position: fixed;
   cursor: pointer;
 }
@@ -315,7 +314,7 @@ footer {
   background-color: #404040;
   position: absolute;
   left: 0;
-  z-index: 99;
+  z-index: 2;
   height: 250px;
   width: 100%;
   -ms-flex-pack: distribute;
@@ -365,11 +364,34 @@ footer .creators .creator_accounts {
   padding-right: 5px;
 }
 
-/* @media screen and (max-width: 700px){
-*/
-.animal_name {
+.animal_name_crab {
   text-align: center;
   position: relative;
+  text-shadow: 1px 1px 1px #9B1B31;
+}
+
+.animal_name_blob {
+  text-align: center;
+  position: relative;
+  text-shadow: 1px 1px 1px #7BC4C4;
+}
+
+.animal_name_jelly {
+  text-align: center;
+  position: relative;
+  text-shadow: 1px 1px 1px #F0BF59;
+}
+
+.animal_name_shark {
+  text-align: center;
+  position: relative;
+  text-shadow: 1px 1px 1px #5A5CA0;
+}
+
+.animal_name_dumbo {
+  text-align: center;
+  position: relative;
+  text-shadow: 1px 1px 1px #CC3366;
 }
 
 #logo1 {
@@ -387,7 +409,7 @@ footer .creators .creator_accounts {
   margin-bottom: 2vh;
 }
 
-#scrollcrab {
+#scroll {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -419,6 +441,12 @@ footer .creators .creator_accounts {
   }
 }
 
+@media screen and (max-width: 1700px) {
+  #scroll {
+    visibility: hidden;
+  }
+}
+
 .bio_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,7 +458,6 @@ footer .creators .creator_accounts {
   width: 20vw;
   margin-left: 20vw;
   padding: 15px;
-  text-align: justify;
   border-radius: 5px 5px 5px 5px;
   background-color: #404040;
   color: #AFAFAF;
@@ -439,7 +466,7 @@ footer .creators .creator_accounts {
   font-size: 2vh;
 }
 
-.jelly_appear {
+.appear {
   width: 35vw;
   margin-left: 3vw;
   text-align: justify;
@@ -448,10 +475,42 @@ footer .creators .creator_accounts {
   font-size: 1.8vh;
 }
 
-.jelly_appear .title_jelly {
+.appear .title_jelly {
   font-family: 'Amatic SC';
   font-size: 3vh;
   color: #F0BF59;
+  letter-spacing: 0.3vw;
+  margin-bottom: 10px;
+}
+
+.appear .title_crab {
+  font-family: 'Amatic SC';
+  font-size: 3vh;
+  color: #9B1B31;
+  letter-spacing: 0.3vw;
+  margin-bottom: 10px;
+}
+
+.appear .title_blob {
+  font-family: 'Amatic SC';
+  font-size: 3vh;
+  color: #7BC4C4;
+  letter-spacing: 0.3vw;
+  margin-bottom: 10px;
+}
+
+.appear .title_shark {
+  font-family: 'Amatic SC';
+  font-size: 3vh;
+  color: #5A5CA0;
+  letter-spacing: 0.3vw;
+  margin-bottom: 10px;
+}
+
+.appear .title_dumbo {
+  font-family: 'Amatic SC';
+  font-size: 3vh;
+  color: #CC3366;
   letter-spacing: 0.3vw;
   margin-bottom: 10px;
 }
@@ -460,10 +519,12 @@ footer .creators .creator_accounts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 7vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 15vh;
 }
 
-.secondline_info .jelly_humanrelation {
+.secondline_info .humanrelation {
   width: 30vw;
   margin-left: 20vw;
   margin-top: 10vh;
@@ -473,7 +534,7 @@ footer .creators .creator_accounts {
   font-size: 1.8vh;
 }
 
-.secondline_info .jelly_humanrelation .humanjelly_title {
+.secondline_info .humanrelation .humanjelly_title {
   font-family: 'Amatic SC';
   font-size: 3vh;
   color: #F0BF59;
@@ -481,16 +542,101 @@ footer .creators .creator_accounts {
   margin-bottom: 10px;
 }
 
-.secondline_info .jelly_map img {
+.secondline_info .humanrelation .humancrab_title {
+  font-family: 'Amatic SC';
+  font-size: 3vh;
+  color: #9B1B31;
+  letter-spacing: 0.3vw;
+  margin-bottom: 10px;
+}
+
+.secondline_info .humanrelation .humanblob_title {
+  font-family: 'Amatic SC';
+  font-size: 3vh;
+  color: #7BC4C4;
+  letter-spacing: 0.3vw;
+  margin-bottom: 10px;
+}
+
+.secondline_info .humanrelation .humanshark_title {
+  font-family: 'Amatic SC';
+  font-size: 3vh;
+  color: #5A5CA0;
+  letter-spacing: 0.3vw;
+  margin-bottom: 10px;
+}
+
+.secondline_info .humanrelation .humandumbo_title {
+  font-family: 'Amatic SC';
+  font-size: 3vh;
+  color: #CC3366;
+  letter-spacing: 0.3vw;
+  margin-bottom: 10px;
+}
+
+.secondline_info .map img {
   width: 25vw;
   margin-top: 7vh;
   margin-left: 5vw;
 }
 
+@media screen and (max-width: 1000px) {
+  .bio_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 8vh;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .bio_container .bio_content {
+    width: 73%;
+    margin: 10%;
+    padding: 15px;
+  }
+  .bio_container .appear {
+    width: 80%;
+    margin: 10%;
+  }
+  .secondline_info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .secondline_info .humanrelation {
+    width: 80%;
+    margin: 10%;
+  }
+  #crabmap {
+    width: 80%;
+    margin: 10%;
+  }
+  #blobmap {
+    width: 80%;
+    margin: 10%;
+  }
+  #jellymap {
+    width: 80%;
+    margin: 10%;
+  }
+  #sharkmap {
+    width: 80%;
+    margin: 10%;
+  }
+  #dumbomap {
+    width: 80%;
+    margin: 10%;
+  }
+}
+
 #japanese_crab_page {
   position: relative;
   z-index: 1;
-  padding-top: 5%;
+  padding-top: 3%;
+  padding-bottom: 5%;
   left: 25%;
   width: 50vw;
 }
@@ -499,6 +645,7 @@ footer .creators .creator_accounts {
   position: relative;
   z-index: 1;
   padding-top: 5%;
+  padding-bottom: 10%;
   left: 25%;
   width: 50vw;
 }
@@ -506,7 +653,8 @@ footer .creators .creator_accounts {
 #cosmicjelly_page {
   position: relative;
   z-index: 1;
-  padding-top: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
   left: 25%;
   width: 50vw;
 }
@@ -515,16 +663,18 @@ footer .creators .creator_accounts {
   position: relative;
   z-index: 1;
   padding-top: 5%;
-  left: 25%;
-  width: 50vw;
+  padding-bottom: 10%;
+  left: 20%;
+  width: 60vw;
 }
 
 #dumbo_octapus_page {
   position: relative;
   z-index: 1;
   padding-top: 5%;
-  left: 25%;
-  width: 40vw;
+  padding-bottom: 5%;
+  left: 30%;
+  width: 37vw;
 }
 
 .team {
@@ -581,7 +731,12 @@ canvas {
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   background-color: #404040;
   color: #AFAFAF;
-  margin: 200px 100px 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 20vh 25% 0;
+  padding: 20px 20px 20px 20px;
+  border-radius: 25px;
+  font-family: 'Oswald';
 }
 
 @-webkit-keyframes slide-top {
